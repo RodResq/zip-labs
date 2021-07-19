@@ -10,7 +10,7 @@ import java.util.zip.ZipOutputStream;
 public class ZipSingleFile {
 	
 	public void createZip() throws IOException {
-		String sourceFile = "src/main/resources/test1.txt";
+		String sourceFile = "src/main/resources/zipTest/test1.txt";
 		FileOutputStream fos = new FileOutputStream("src/main/resources/compressed.zip");
 		ZipOutputStream zipOut = new ZipOutputStream(fos);
 		File fileToZip = new File(sourceFile);

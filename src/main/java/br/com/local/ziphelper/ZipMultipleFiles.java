@@ -12,7 +12,7 @@ import java.util.zip.ZipOutputStream;
 public class ZipMultipleFiles {
 	
 	public void createMultiplesZipFiles() throws IOException {
-		List<String> srcFiles = Arrays.asList("src/main/resources/test1.txt", "src/main/resources/test2.txt");
+		List<String> srcFiles = Arrays.asList("src/main/resources/zipTest/test1.txt", "src/main/resources/zipTest/test2.txt");
 		FileOutputStream fos = new FileOutputStream("src/main/resources/multiCompressed.zip");
 		ZipOutputStream zipOut = new ZipOutputStream(fos);
 		for (String srcFile : srcFiles) {

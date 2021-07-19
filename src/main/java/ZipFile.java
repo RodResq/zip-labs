@@ -1,5 +1,6 @@
 import java.io.IOException;
 
+import br.com.local.ziphelper.ZipDirectory;
 import br.com.local.ziphelper.ZipMultipleFiles;
 import br.com.local.ziphelper.ZipSingleFile;
 
@@ -10,8 +11,11 @@ public class ZipFile {
 //		ZipSingleFile zipSingle = new ZipSingleFile();
 //		zipSingle.createZip();
 		
-		ZipMultipleFiles zipMultipleFiles = new ZipMultipleFiles();
-		zipMultipleFiles.createMultiplesZipFiles();
+//		ZipMultipleFiles zipMultipleFiles = new ZipMultipleFiles();
+//		zipMultipleFiles.createMultiplesZipFiles();
+		
+		ZipDirectory zipDirectory = new ZipDirectory();
+		zipDirectory.zipDirectoryMain();
 	}
 
 }
